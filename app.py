@@ -236,7 +236,7 @@ if user_query:
             conversation_messages = []
             
             # Get last 10 messages (5 exchanges) for context
-            history_to_include = st.session_state.chat_history[-11:-1]
+            history_to_include = st.session_state.chat_history[-6:]
             
             # Convert to LangChain messages
             for role, content in history_to_include:
