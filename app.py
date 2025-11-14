@@ -55,7 +55,7 @@ st.sidebar.markdown("---")
 # Model Selection
 model_choice = st.sidebar.selectbox(
     "Choose Model:", 
-    ["openai/gpt-oss-20b","llama-3.1-8b-instant","llama-3.3-70b-versatile"]
+    ["llama-3.1-8b-instant","llama-3.3-70b-versatile""openai/gpt-oss-20b"]
 )
 temperature = st.sidebar.slider("Temperature:", 0.0, 1.0, 0.3, 0.05)
 
